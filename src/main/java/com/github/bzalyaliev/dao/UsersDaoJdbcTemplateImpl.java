@@ -18,10 +18,10 @@ public class UsersDaoJdbcTemplateImpl implements UsersDao {
     private final Map<Long, User> usersMap = new HashMap<>();
 
     private final String SQL_SELECT_USERS_WITH_CARS =
-            "SELECT \"user\".*, \"car\".id as car_id, \"car\".model FROM \"user\" LEFT JOIN car ON \"user\".id = \"car\".owner_id WHERE \"user\".id = ?";
+            "SELECT \"user\".*, \"car\".id as car_id, \"car\".model FROM \"user\" LEFT JOIN car ON \"user\".id = \"car\".owner_id WHERE \"user\".id = 1";
 
     private final String SQL_SELECT_ALL_BY_FIRST_NAME =
-            "SELECT * FROM \"user\" WHERE first_name = ?";
+            "SELECT * FROM \"user\" WHERE first_name = 1";
 
     private final String SQL_INSERT_USER =
             "" + "INSERT INTO \"user\"(first_name, last_name) VALUES (:firstName, :lastName)";
