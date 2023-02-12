@@ -12,4 +12,6 @@
         <property name="url" value="jdbc:postgresql://localhost:5432/user_db"/>
     </bean>
 
+    <bean id="/users" class="com.github.bzalyaliev.controllers.UsersController"/>
+
 </beans>
