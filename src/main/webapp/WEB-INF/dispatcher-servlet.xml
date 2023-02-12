@@ -14,4 +14,9 @@
 
     <bean id="/users" class="com.github.bzalyaliev.controllers.UsersController"/>
 
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
 </beans>
