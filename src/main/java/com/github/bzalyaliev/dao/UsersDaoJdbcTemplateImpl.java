@@ -2,14 +2,17 @@ package com.github.bzalyaliev.dao;
 
 import com.github.bzalyaliev.model.Car;
 import com.github.bzalyaliev.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.util.*;
 
+@Component
 public class UsersDaoJdbcTemplateImpl implements UsersDao {
 
     private final JdbcTemplate template;
